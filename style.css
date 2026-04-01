@@ -1,0 +1,194 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY */
+body {
+    background: linear-gradient(to right, rgb(189, 191, 194),rgb(86, 158, 241));
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* MAIN */
+main {
+    margin: 20px;
+}
+    
+/* HEADINGS */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background: #222;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background: orange;
+    color: black;
+}
+
+/* ================= TABLE ================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #333;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    background: #ffffff;
+}
+
+tr:nth-child(even) td {
+    background: #f2f2f2;
+}
+
+/* ================= HEADER ================= */
+header {
+    background: white;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ================= LAYOUT ================= */
+.container {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+}
+
+/* BOXES */
+aside, section, article {
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* DIFFERENT COLORS */
+aside {
+    flex: 1;
+    background: #fff3cd;
+}
+
+section {
+    flex: 2;
+    background: #ffffff;
+}
+
+article {
+    flex: 2;
+    background: #e3f2fd;
+}
+
+/* ================= BUTTON ================= */
+button {
+    background: linear-gradient(45deg, orange, orangered);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background: black;
+}
+
+/* ================= FORM ================= */
+form {
+    background: white;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0 3px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: orange;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: #333;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    margin-top: 20px;
+}
+
+/* ================= 📱 RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        padding: 12px;
+    }
+
+    aside, section, article {
+        width: 100%;
+    }
+
+    form {
+        width: 90%;
+    }
+}
